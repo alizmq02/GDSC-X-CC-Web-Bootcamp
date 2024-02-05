@@ -1,0 +1,101 @@
+<!-- Indicates the HTML's version that you will be using. -->
+<!DOCTYPE html> 
+<!-- the root element of an HTML document. It is the highest-level element in the document, and it contains all the other elements. -->
+<html lang="en">
+<!-- The cover of the document. -->
+<head>
+    <!-- It decides the encoding way of the page content -->
+    <meta charset="UTF-8">
+    <!-- It sets the viewport width to the device width and sets the initial zoom scale to 1.0 for better responsive and mobile-friendly web design. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is to link style to the css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- The page title in the browser -->
+    <title>Your Name</title>
+</head>
+<!-- The body tag contains the content of the page. -->
+<body>
+    <!-- The header section of the page. -->
+    <header>
+        <!-- The page's title -->
+        <h1 id="name">Your Name</h1>
+        <!-- Navigation bar -->
+        <nav>
+          <!-- Unordered List -->
+          <ul>
+            <!-- The list items -->
+            <!-- Each list Item has a link inside it, because we want it to be clickable to navigate to other pages -->
+            <li><a class="navItem" href="#resume" target="_blank">Resume</a></li>
+            <li><a class="navItem" href="#linkedIn" target="_blank">LinkedIn</a></li>
+            <li><a class="navItem" href="#gitHub" target="_blank">GitHub</a></li>
+          </ul>
+        </nav>
+    </header>
+      
+
+    <!-- The main content of the page. -->
+    <main>
+      <!-- The first section in the page which is the about section -->
+      <section id="about">
+        <img id="profileImage" src="Assets\ProfileImage.jpg" alt="Personal Image">
+        <!-- The title of the about section -->
+        <h2>About Me</h2>
+        <!-- Paragraph that includes the describtion of the section -->
+        <p>Write a describtion about yourself here</p>
+      </section>
+
+      <!-- The second section in the page which is the projects section -->
+      <section id="projects">
+        <h2 class="subHeading" id="projectHead">Projects</h2>
+        <ul>
+          <li>
+            <div class="project">
+              <h3 class="projectHeading">Project 1</h3>
+              <img class="projectImage" src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/14202/production/_108243428_gettyimages-871148930.jpg" alt="Project 1">
+              <p class="projectDescrebtion">A describtion for Project 1.</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <h3 class="projectHeading">Project 2</h3>
+              <img class="projectImage" src="https://www.nita.edu.sa/images/thumbs/0001200_web-development-beginner.jpeg" alt="Project 2">
+              <p class="projectDescrebtion">A describtion for Project 2.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+        
+      <!-- The third section in the page which is the conatact section -->
+      <section id="contact">
+        <h2 class="subHeading">Contact Me</h2>
+        <!-- Form tag is used when you want to take information from the user -->
+        <form>
+
+          <!-- There are many input types in HTML you can search about them in your free time -->
+          <!-- Each input field has a label to descripte this input field -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+           
+
+          <label for="message">Message:</label>
+
+
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+
+
+    <!-- The footer of the page -->
+    <footer>
+      <!-- Here we have HTML entity which can not be written using normal way we need to copy its represntation from the documentation -->
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
