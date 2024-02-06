@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+    grid-gap: 10px;
+  }
+  
+  .item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }

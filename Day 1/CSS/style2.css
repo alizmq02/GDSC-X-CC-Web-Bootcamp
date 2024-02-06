@@ -1,0 +1,31 @@
+/* static position works same as the html one */
+/* relative position works same as static 
+position, but it allows you to to 4 thing
+that static position can not do */
+/* absolute will remove the element our of the
+page flow. If you want to make it relative to
+another element you need to change the parent
+element to relative, absolute, sticky, or fixed */
+
+#gray {
+    background-color: gray;
+    position: relative;
+}
+
+#red {
+    position: fixed;
+    background-color: red;
+    top: 0;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
