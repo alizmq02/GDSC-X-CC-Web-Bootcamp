@@ -13,6 +13,13 @@
    You can use _ with numbers to make the read easiyer.
 */
 
+let x = "9.5";
+x = Number(x)
+let y = parseFloat(x)
+
+console.log(typeof(x))
+console.log(typeof(y))
+
 //---------------------------------------------------------------------------------------------//
 // Advanced arrays
 /*
@@ -36,6 +43,14 @@
    .reduce method is used to add all the element of an number array it takes call back function(accumulator,value,index,array) it starts in the values from one and the accumulator is the first element and you can put a second parameter to set a value of the accumulator rather than using the first element of the array.
 */
 
+let names = ["Ali", "Mohammed", "Khalid", "Omar"]
+
+names.forEach(function(x, y, a){
+   console.log(x);
+   console.log(y);
+   console.log(a);
+})
+
 //------------------------------------------------------------------------------------//
 //OOP
 /*
@@ -46,3 +61,39 @@
   for the inheritance use extends ClassName.
   there is overriding in methods in javaScript.
 */
+
+let Ahmed = {
+   name: "Ahmed",
+   age: 21,
+   major: "Software Engineering",
+
+   getName: function(name){
+      return this.name;
+   }
+}
+
+console.log(Ahmed.name)
+console.log(Ahmed.getName())
+console.log(typeof(Ahmed))
+
+class Car {
+   carName
+   #carId
+   static numberOfCars
+
+   constructor(name, id){
+      this.carName = name;
+      this.#carId = id;
+
+   }
+
+   getId() {
+      return this.#carId
+   }
+
+}
+
+as = new Car("as", 102938);
+
+console.log(as.id)
+console.log(as.getId())
